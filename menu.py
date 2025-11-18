@@ -76,6 +76,7 @@ def Menu_administrador():
     print("1 - Gerar relatórios")
     print("2 - gerenciar usuarios")
     print("3 - Gerar serviços")
+    print("4 - voltar")
     opc = int(input("Digite uma opção: "))
     return opc
 

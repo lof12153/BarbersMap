@@ -1,7 +1,7 @@
 from banco import CLIENTES, BARBEIROS, ADMINISTRADORES, salvar_barbeiro, salvar_cliente
 from cliente import fluxo_cliente
 from barbeiro import fluxo_barbeiro
-from administador import fluxo_administrador
+from administador import validacao_cpf
 import os
 import time
 
@@ -53,7 +53,7 @@ def login(cpf, email, senha):
         elif usuario["tipo_usuario"] == "barbeiro":
             return fluxo_barbeiro(cpf)
         elif usuario["tipo_usuario"] == "administrador":
-            return fluxo_administrador(cpf)
+            return validacao_cpf(cpf)
     else: 
         print("Falha no login! Seu email, senha ou cpf podem estar incorretos, verifique suas informações e tente novamente!")
         time.sleep(2)
