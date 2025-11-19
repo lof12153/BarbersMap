@@ -68,17 +68,22 @@ def menu_info_cliente(cpf):
         from cliente import editar_informacoes
         editar_informacoes(cpf)
 
-def Menu_administrador():
-    os.system('cls') 
+def Menu_administrador(cpf):
+    #os.system('cls') 
     print("=============================")
     print("         Administrador       ")
     print("=============================")
     print("1 - Gerar relatórios")
-    print("2 - gerenciar usuarios")
-    print("3 - Gerar serviços")
-    print("4 - voltar")
-    opc = int(input("Digite uma opção: "))
-    return opc
+    print("2 - gerenciar usuario")
+    print("3 - Gerenciar serviços")
+    print("4 - sair")
+    
+    try:
+        opc = int(input("Digite uma opção: ").strip())
+        return opc
+    except ValueError:
+        return 999
+    
 
 def menu_sac():
     os.system('cls') 
