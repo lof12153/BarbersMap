@@ -10,7 +10,7 @@ def buscar_servico_por_nome(palavra_chave, dados_barbeiros):
     if not palavra_chave:
         return resultados
 
-    for cpf, info_barbeiro in dados_barbeiros.items():
+    for chave, info_barbeiro in dados_barbeiros.items():
         
         if "servicos" not in info_barbeiro:
             continue

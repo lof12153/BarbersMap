@@ -44,7 +44,7 @@
         "agendamentos": [
             {
                 "cliente": "clienteteste",
-                "cpf": "11111111111",
+                "chave": "11111111111",
                 "servico": "Corte Social",
                 "valor": 45,
                 "data": "08/11"
@@ -53,7 +53,7 @@
         "historico": [
             {
                 "cliente": "clienteteste",
-                "cpf": "11111111111",
+                "chave": "11111111111",
                 "servico": "Corte Social",
                 "valor": 45,
                 "data": "01/11"

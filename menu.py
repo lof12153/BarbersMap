@@ -47,16 +47,19 @@ def menu_cliente():
     opc = int(input("Digite uma opção: "))
     return opc
 
-def menu_info_cliente(cpf):
+def menu_info_cliente(chave):
     os.system('cls') 
     print("=============================")
     print("|        Barber´sMap        |")
     print("|    Informações Pessoais   |")
     print("=============================")   
-    print(f"Nome: {CLIENTES[cpf]["nome"]}")
-    print(f"CPF: {cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:11]}")
-    print(f"Email: {CLIENTES[cpf]["email"]}")
-    print(f"Senha: {CLIENTES[cpf]["senha"]}")
+    print(f"Nome: {CLIENTES[chave]["nome"]}")
+    if len(chave) == 11:
+        print(f"CPF: {chave[:3]}.{chave[3:6]}.{chave[6:9]}-{chave[9:11]}")
+    elif len(chave) == 14:
+        print(f"CNPJ: {chave[:2]}.{chave[2:5]}.{chave[5:8]}/{chave[8:12]}-{chave[12:14]}")
+    print(f"Email: {CLIENTES[chave]["email"]}")
+    print(f"Senha: {CLIENTES[chave]["senha"]}")
     print("=============================")
     print("1 - Editar informações")
     print("2 - Sair")
@@ -66,10 +69,10 @@ def menu_info_cliente(cpf):
         opc = int(input("Digite uma opção: "))
     if opc == 1:
         from cliente import editar_informacoes
-        editar_informacoes(cpf)
+        editar_informacoes(chave)
 
-def Menu_administrador(cpf):
-    #os.system('cls') 
+def Menu_administrador(chave):
+    os.system('cls') 
     print("=============================")
     print("         Administrador       ")
     print("=============================")

@@ -7,7 +7,7 @@
         "agendamentos": [
             {
                 "barbeiro": "barbeiroteste",
-                "cpf": "00000000000",
+                "chave": "00000000000",
                 "valor": 45,
                 "data": "08/11",
                 "servico": "Corte Social"
@@ -16,11 +16,19 @@
         "historico": [
             {
                 "barbeiro": "barbeiroteste",
-                "cpf": "00000000000",
+                "chave": "00000000000",
                 "servico": "Corte Social",
                 "valor": 45,
                 "data": "01/11"
             }
         ]
+    },
+    "09291376558": {
+        "nome": "Batista",
+        "senha": "senhatestE123@",
+        "email": "Batista@hotmail.com",
+        "tipo_usuario": "cliente",
+        "agendamentos": [],
+        "historico": []
     }
 }
