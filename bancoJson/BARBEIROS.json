@@ -17,6 +17,79 @@
                     5,
                     4.0,
                     4.0,
+                    4.0,
+                    2.5,
+                    3.5
+                ]
+            },
+            {
+                "nome": "Barba Simples",
+                "valor": 20,
+                "tempo": 20,
+                "avaliacao": [
+                    3,
+                    4,
+                    5
+                ]
+            },
+            {
+                "nome": "Corte na Tesoura",
+                "valor": 55,
+                "tempo": 50,
+                "avaliacao": [
+                    2,
+                    2,
+                    2
+                ]
+            }
+        ],
+        "agendamentos": [
+            {
+                "cliente": "clienteteste",
+                "chave": "11111111111",
+                "servico": "Corte Social",
+                "valor": 45,
+                "data": "08/11"
+            }
+        ],
+        "historico": [
+            {
+                "cliente": "clienteteste",
+                "chave": "11111111111",
+                "servico": "Corte Social",
+                "valor": 45,
+                "data": "01/11"
+            },
+            {
+                "cliente": "clienteteste",
+                "chave": "11111111111",
+                "servico": "corte na tesoura",
+                "valor": 55,
+                "data": "27/11"
+            }
+        ]
+    },
+    "00000000001": {
+        "nome": "barbeiroteste2",
+        "senha": "senhateste",
+        "email": "barbeiro@gmail.com",
+        "tipo_usuario": "barbeiro",
+        "endereco": "Rua Santa Eunapolis De Janeiro, 20",
+        "sobre": "Eu tento",
+        "servicos": [
+            {
+                "nome": "Corte Social",
+                "valor": 450,
+                "tempo": 40,
+                "avaliacao": [
+                    5,
+                    5,
+                    5,
+                    4.0,
+                    4.0,
+                    4.0,
+                    4.0,
+                    5.0,
                     4.0
                 ]
             },
@@ -33,6 +106,71 @@
             {
                 "nome": "Corte na Tesoura",
                 "valor": 55,
+                "tempo": 50,
+                "avaliacao": [
+                    2,
+                    2,
+                    2
+                ]
+            }
+        ],
+        "agendamentos": [
+            {
+                "cliente": "clienteteste",
+                "chave": "11111111111",
+                "servico": "Corte Social",
+                "valor": 45,
+                "data": "08/11"
+            }
+        ],
+        "historico": [
+            {
+                "cliente": "clienteteste",
+                "chave": "11111111111",
+                "servico": "Corte Social",
+                "valor": 45,
+                "data": "01/11"
+            },
+            {
+                "cliente": "clienteteste",
+                "chave": "11111111111",
+                "servico": "corte na tesoura",
+                "valor": 55,
+                "data": "27/11"
+            }
+        ]
+    },
+    "00000000003": {
+        "nome": "barbeiroteste3",
+        "senha": "senhateste",
+        "email": "barbeiro@gmail.com",
+        "tipo_usuario": "barbeiro",
+        "endereco": "Rua Santa Eunapolis De Janeiro, 20",
+        "sobre": "Eu tento",
+        "servicos": [
+            {
+                "nome": "Corte Social",
+                "valor": 10,
+                "tempo": 40,
+                "avaliacao": [
+                    5,
+                    5,
+                    5
+                ]
+            },
+            {
+                "nome": "Barba Simples",
+                "valor": 15,
+                "tempo": 20,
+                "avaliacao": [
+                    3,
+                    4,
+                    5
+                ]
+            },
+            {
+                "nome": "Corte na Tesoura",
+                "valor": 5,
                 "tempo": 50,
                 "avaliacao": [
                     2,
