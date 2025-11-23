@@ -1,16 +1,17 @@
 from cadastroElogin import fluxo_cadastrar, fluxo_login
 from menu import menu, menu_sac
 import os
+from pesquisa import painel_busca
 
 
 def main():
+    chave = False
     os.system('cls') 
     opc = 0
     while opc != 5:
         opc = menu()
         if opc == 1:
-            print("Trabalho em andamento!")
-            break
+            painel_busca(chave)
         elif opc == 2:
             fluxo_login()
         elif opc == 3:

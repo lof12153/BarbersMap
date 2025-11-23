@@ -57,6 +57,13 @@
                 "servico": "Corte Social",
                 "valor": 45,
                 "data": "01/11"
+            },
+            {
+                "cliente": "clienteteste",
+                "chave": "11111111111",
+                "servico": "corte na tesoura",
+                "valor": 55,
+                "data": "27/11"
             }
         ]
     }

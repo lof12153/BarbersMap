@@ -3,7 +3,6 @@ from cliente import fluxo_cliente
 from barbeiro import fluxo_barbeiro
 from administador import validacao_chave
 import os
-import time
 
 def cadastrar_usuario(nome, email, chave, senha, tipo_usuario):
     if chave in CLIENTES or chave in BARBEIROS: 

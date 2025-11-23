@@ -28,13 +28,13 @@ def fluxo_barbeiro(chave):
 
 def info_profissional(chave):
     os.system('cls') 
-    medias = 0
+    media = 0
     for i in range(len(BARBEIROS[chave]["servicos"])):
-        medias += sum(BARBEIROS[chave]["servicos"][i]["avaliacao"])/len(BARBEIROS[chave]["servicos"][i]["avaliacao"])
+        media += sum(BARBEIROS[chave]["servicos"][i]["avaliacao"])/len(BARBEIROS[chave]["servicos"][i]["avaliacao"])
     if len(BARBEIROS[chave]["servicos"]) == 0:
         media = 0
     else:
-        media = medias/len(BARBEIROS[chave]["servicos"])
+        media = media/len(BARBEIROS[chave]["servicos"])
     print("=============================")
     print("|        Barber´sMap        |")
     print("| Informações Profissionais |")
@@ -177,8 +177,8 @@ def visualizar_historico(chave):
     if len(historico)==0:
         print("\nNenhum serviço realizado ainda.")
     else:
+        cont = 1
         for h in historico:
-            cont = 1
             print(f"{cont}° - Cliente: {h['cliente']} | Serviço: {h['servico']} | Valor: R${h['valor']:.2f} | Data: {h['data']}")
             cont += 1
     print("\n1 - Voltar")

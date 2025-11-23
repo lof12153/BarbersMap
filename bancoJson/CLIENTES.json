@@ -20,6 +20,13 @@
                 "servico": "Corte Social",
                 "valor": 45,
                 "data": "01/11"
+            },
+            {
+                "barbeiro": "barbeiroteste",
+                "chave": "00000000000",
+                "valor": 55,
+                "data": "27/11",
+                "servico": "corte na tesoura"
             }
         ]
     },

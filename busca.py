@@ -44,19 +44,15 @@ def buscar_servico_por_nome(palavra_chave, dados_barbeiros):
 
 
 def fluxo_buscar_servicos():
-    
     while True:
-        
         os.system('cls') 
-        
         print("=============================")
         print("         Barber'sMap         ")
         print("      Busca de serviços      ")
         print("=============================")
         print("(Para voltar ao menu, pressione enter deixando o espaço em branco)\n")
-
         busca = input("Digite o serviço que deseja buscar: ")
-
+        
         if not busca:
             print("Voltando ao menu...")
             time.sleep(1) 
