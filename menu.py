@@ -77,6 +77,7 @@ def Menu_administrador(chave):
     print("         Administrador       ")
     print("=============================")
     print("1 - Gerar relatórios")
+<<<<<<< HEAD
     print("2 - gerenciar usuário")
     print("3 - Gerenciar serviços")
     print("4 - sair")
@@ -87,6 +88,13 @@ def Menu_administrador(chave):
     except ValueError:
         return 999
     
+=======
+    print("2 - gerenciar usuarios")
+    print("3 - Gerar serviços")
+    print("4 - voltar")
+    opc = int(input("Digite uma opção: "))
+    return opc
+>>>>>>> 015da2ea0c11f55ace51d7d1bdbc437db33079b9
 
 def menu_sac():
     os.system('cls') 

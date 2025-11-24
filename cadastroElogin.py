@@ -1,7 +1,11 @@
 from banco import CLIENTES, BARBEIROS, ADMINISTRADORES, salvar_barbeiro, salvar_cliente
 from cliente import fluxo_cliente
 from barbeiro import fluxo_barbeiro
+<<<<<<< HEAD
 from administador import validacao_chave
+=======
+from administador import validacao_cpf
+>>>>>>> 015da2ea0c11f55ace51d7d1bdbc437db33079b9
 import os
 
 def cadastrar_usuario(nome, email, chave, senha, tipo_usuario):
@@ -42,7 +46,11 @@ def login(chave, email, senha):
         elif usuario["tipo_usuario"] == "barbeiro":
             return fluxo_barbeiro(chave)
         elif usuario["tipo_usuario"] == "administrador":
+<<<<<<< HEAD
             return validacao_chave(chave)
+=======
+            return validacao_cpf(cpf)
+>>>>>>> 015da2ea0c11f55ace51d7d1bdbc437db33079b9
     else: 
         print("Falha no login! Seu email, senha ou chave podem estar incorretos, verifique suas informações e tente novamente! Pressione ENTER para continuar.")
         input()
