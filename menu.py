@@ -77,7 +77,7 @@ def Menu_administrador(chave):
     print("         Administrador       ")
     print("=============================")
     print("1 - Gerar relatórios")
-    print("2 - gerenciar usuario")
+    print("2 - gerenciar usuário")
     print("3 - Gerenciar serviços")
     print("4 - sair")
     
