@@ -1,4 +1,5 @@
 from menu import menu_cliente, menu_sac, menu_info_cliente
+from pesquisa import painel_busca
 from banco import CLIENTES, BARBEIROS, salvar_cliente, salvar_barbeiro
 import os
 import time
@@ -8,7 +9,7 @@ def fluxo_cliente(chave):
     while opc != 6:
         opc = menu_cliente()
         if opc == 1:
-            print("Trabalho em andamento")
+            painel_busca(chave)
         elif opc == 2:
             menu_info_cliente(chave)
         elif opc == 3:
@@ -114,7 +115,7 @@ def agendamentos_cliente(chave):
             for i in range(len(CLIENTES[chave]["agendamentos"])):
                 if servico.lower().strip() == CLIENTES[chave]["agendamentos"][i]["servico"].lower().strip():
                     for I in range(len(BARBEIROS[CLIENTES[chave]["agendamentos"][i]["chave"]]["agendamentos"])):
-                        if chave == BARBEIROS[CLIENTES[chave]["agendamentos"][i]["chave"]]["agendamentos"][I]["chave"]:
+                        if chave == BARBEIROS[CLIENTES[chave]["agendamentos"][i]["chave"]]["agendamentos"][I]["chave"] and servico.lower().strip() == BARBEIROS[CLIENTES[chave]["agendamentos"][i]["chave"]]["agendamentos"][I]["servico"]:
                             CLIENTES[chave]["historico"].append(CLIENTES[chave]["agendamentos"][i])
                             BARBEIROS[CLIENTES[chave]["agendamentos"][i]["chave"]]["historico"].append(BARBEIROS[CLIENTES[chave]["agendamentos"][i]["chave"]]["agendamentos"][I])
                             del BARBEIROS[CLIENTES[chave]["agendamentos"][i]["chave"]]["agendamentos"][I]
